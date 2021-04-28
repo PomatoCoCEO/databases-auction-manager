@@ -40,17 +40,6 @@ You can modify the contents and the server will update the sources without requi
 
 
 
-## Demo [Java](java) REST API 
-
-To start this demo with run the script (e.g. [`./docker-compose-java-psql.sh`](docker-compose-java-psql.sh)) to have both the server and the database running.
-
-The demo available here uses [Spring Boot](https://spring.io/projects/spring-boot), which is one of the most widely used solutions to develop REST APIs and micro-services.
-*"Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run."*
-It is very easy to build and automate its deployment either with `maven` or `Docker`.
-
-* Web browser access: http://localhost:8080
-
-
 ## Authors
 
 * BD 2021 Team - https://dei.uc.pt/lei/
