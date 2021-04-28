@@ -42,5 +42,5 @@ You can modify the contents and the server will update the sources without requi
 
 ## Authors
 
-* BD 2021 Team - https://dei.uc.pt/lei/
-* University of Coimbra
+* André Carvalho, 2019216156
+* Paulo Cortesão, 2019216517
