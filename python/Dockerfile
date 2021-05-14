@@ -17,7 +17,7 @@ run pip install psycopg2-binary
 
 copy . /app
 
-volume ["/app"]
+volume ["./app"]
 
 workdir /app
 

@@ -13,7 +13,7 @@ CREATE TABLE utilizador (
 );
 
 CREATE TABLE token (
-	authtoken	 VARCHAR(128) UNIQUE NOT NULL,
+	authtoken	 NUMERIC(15) UNIQUE NOT NULL,
 	expira_token	 TIMESTAMP NOT NULL,
 	utilizador_userid BIGINT NOT NULL
 );
