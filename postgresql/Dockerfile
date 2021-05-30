@@ -9,11 +9,12 @@
 
 FROM library/postgres
 
-
 ENV POSTGRES_USER admin
 ENV POSTGRES_PASSWORD admin
 ENV POSTGRES_DB leiloes
 
-COPY createTable.sql /docker-entrypoint-initdb.d/
+COPY aaacreateTable.sql /docker-entrypoint-initdb.d/
+COPY procedures/* /docker-entrypoint-initdb.d/
+COPY test_data/* /docker-entrypoint-initdb.d/
 
 EXPOSE 5432

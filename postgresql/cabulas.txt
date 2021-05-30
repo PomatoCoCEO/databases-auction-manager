@@ -1,0 +1,56 @@
+select registerUser('paulocorte', 'pass', 'email@gmail.com');
+
+psql -h localhost -U admin -d leiloes
+
+
+POSTS:
+
+curl -X POST http://localhost:8080/dbproj/artigo/ -H "Content-Type: application/json" -d '{"artigoId": 560560560, "nome":"Sapato"}'
+curl -X POST http://localhost:8080/dbproj/artigo/ -H "Content-Type: application/json" -d '{"artigoId": 560560560, "nome":"Sapato"}'
+curl -X POST http://localhost:8080/dbproj/user/ -H "Content-Type: application/json" -d '{"username": "Guimarães", "password":"Sapato", "email":"mail@gmail.com"}'
+curl -X POST http://localhost:8080/dbproj/user/ -H "Content-Type: application/json" -d '{"username": "Calcado", "password":"Sapato", "email":"mail_yah@gmail.com"}'
+
+PUTS:
+
+curl -X PUT http://localhost:8080/dbproj/user/ -H "Content-Type: application/json" -d '{"userId": "Guimarães", "password":"Sapato"}'
+
+sugestão:
+
+on insert:
+
+remover dos tokens o que já expirou
+- no leilão - leilaoId validId qa apontar para a versão do leilão mais recente
+
+
+Consultar detalhes de um leilão:
+<leilaoid>
+select * from leilao where leilaoId = <leilaoid>;
+select * from artigo where artigoid in (select artigoid from leilao where leilaoId = <leilaoId>);
+select * from mensagem_notificacao where leilao_leilaoid = <leilaoid>;
+select * from notificacao_licvitalicita where licita_leilao_leilaoid = <leilaoid>;
+
+
+
+add users:
+curl -X POST http://localhost:8080/dbproj/user/ -H "Content-Type: application/json" -d '{"username": "user0", "password":"pass", "email":"user0@gmail.com"}'
+curl -X POST http://localhost:8080/dbproj/user/ -H "Content-Type: application/json" -d '{"username": "user1", "password":"pass", "email":"user1@gmail.com"}'
+curl -X POST http://localhost:8080/dbproj/user/ -H "Content-Type: application/json" -d '{"username": "user2", "password":"pass", "email":"user2@gmail.com"}'
+
+add leiloes:
+curl -X POST http://localhost:8080/dbproj/leilao/ -H "Content-Type: application/json" -d '{"authToken": "1065729"   ,"artigoId" : "2300", "precoMinimo" : "20",  "titulo" : "Sapatilhas das bouas", "descricao": "Sapatilhas da nikey duma kalidade. Xéééé...", "expira_leilao" : "2021-05-31 22:00:00" , "nome":"Tilhas"}'
+curl -X POST http://localhost:8080/dbproj/leilao/ -H "Content-Type: application/json" -d '{"authToken": "1065729"   ,"artigoId" : "2300", "precoMinimo" : "30",  "titulo" : "Sapatilhas das bouas", "descricao": "Sapatilhas da gucci duma kalidade. Xéééé...", "expira_leilao" : "2021-05-31 22:00:00" , "nome":"Tilhas"}'
+curl -X POST http://localhost:8080/dbproj/leilao/ -H "Content-Type: application/json" -d '{"authToken": "1065729"   ,"artigoId" : "2444", "precoMinimo" : "20",  "titulo" : "Um bone do sporting", "descricao": "Celebra a vitoria do sporting com este magnifico bone", "expira_leilao" : "2021-05-31 22:00:00" , "nome":"Bone"}'
+curl -X POST http://localhost:8080/dbproj/leilao/ -H "Content-Type: application/json" -d '{"authToken": "1065729"   ,"artigoId" : "4242", "precoMinimo" : "20",  "titulo" : "Arroz xau xau", "descricao": "Tenta comer-me com pauzinhos" : "2021-05-31 22:00:00" , "nome":"Arroz"}'
+curl -X POST http://localhost:8080/dbproj/leilao/ -H "Content-Type: application/json" -d '{"authToken": "1065729"   ,"artigoId" : "4543", "precoMinimo" : "20",  "titulo" : "massa quase italiana", "descricao": "Sabe tao bem como ir a paris", "expira_leilao" : "2021-05-31 22:00:00" , "nome":"Massa"}'
+curl -X POST http://localhost:8080/dbproj/leilao/ -H "Content-Type: application/json" -d '{"authToken": "1065729"   ,"artigoId" : "6785", "precoMinimo" : "20",  "titulo" : "Um bone do benfica", "descricao": "Comeca ja a fazer compras para o proximo ano" : "2021-05-31 22:00:00" , "nome":"Bone"}'
+
+update leiloes:
+curl -X PUT http://localhost:8080/dbproj/leilao/1 -H "Content-Type: application/json" -d '{"authToken": "1065729" , "titulo" : "Sapatilhas das bouas alteradas", "descricao": "ALTERAÇÃO: Sapatilhas da nikey duma kalidade. Xéééé..."}'
+
+licitacao:
+curl -X PUT http://localhost:8080/dbproj/leilao/1/40.00 -H "Content-Type: application/json" -d '{"authToken": "440981"}'
+
+
+
+
+curl -X GET http://localhost:8080/dbproj/leiloes -H "Content-Type: application/json" -d '{"authToken": "1065729"}'
