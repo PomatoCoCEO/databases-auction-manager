@@ -14,7 +14,7 @@ BEGIN
         return -1;
     end if;
     IF EXPIRE_DATE < NOW() THEN
-        RETURN -1;
+        RETURN -2;
     END IF;
 
     select coalesce(max(leilaoid), 0)+1 into l_id from leilao;

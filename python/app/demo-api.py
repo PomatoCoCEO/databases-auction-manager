@@ -39,7 +39,6 @@ def return_user_id(token, cur):
         cur.execute(statement, (token,))
         res= cur.fetchone()
         res=res[0]
-        cur.execute("commit")
     except (Exception, psycopg2.DatabaseError) as error:
         logger.error(error)
         res=-1
@@ -57,9 +56,16 @@ def warn_winning_bidders(): # fazer uma thread com esta funcao
     conn = db_connection()
     cur = conn.cursor()
     while True:
-        print("checking auctions")
-        cur.execute('call warn_auct_winners();')
-        time.sleep(5*60) #sleeps 5 minutes before each action
+        try:
+            print("checking auctions")
+            cur.execute('call clean_tokens();')
+            cur.execute('call warn_auct_winners();')
+            cur.execute('commit')
+            time.sleep(5*60) #sleeps 5 minutes before each action
+        except (Exception, psycopg2.DatabaseError) as error:
+            logger.error('In supporting thread...')
+            logger.error(error)
+            cur.execute('rollback')
 
     # avisar os respetivos utilizadores
 
@@ -92,15 +98,16 @@ def add_user():
 
     try:
         cur.execute(statement, values)
-        cur.execute("commit")
+        cur.execute('commit')
         result = 'User registered!'
     except (Exception, psycopg2.DatabaseError) as error:
         logger.error(error)
+        cur.execute('rollback')
         result = 'Failed!'
     finally:
         if conn is not None:
             conn.close()
-
+            
     return jsonify(result)
 
 
@@ -134,10 +141,11 @@ def send_message(leilaoid):
 
     try:
         cur.execute(statement, values)
-        cur.execute("commit")
-        result = 'User registered!'
+        cur.execute('commit')
+        result = 'Message delivered!'
     except (Exception, psycopg2.DatabaseError) as error:
         logger.error(error)
+        cur.execute('rollback')
         result = 'Failed!'
     finally:
         if conn is not None:
@@ -147,11 +155,11 @@ def send_message(leilaoid):
 
 
 # user login
-@app.route("/dbproj/notif/", methods=['GET']) # insercao de artigo
-def open_notif_box():
+@app.route("/dbproj/notif/<all>", methods=['GET']) # insercao de artigo
+def open_notif_box(all):
     logger.info("###              NOTIFICATION CHECK            ###");   
     payload = request.get_json()
-
+    
     if "authToken" not in payload:
         return 'authToken is required to check notif box!'
 
@@ -167,11 +175,20 @@ def open_notif_box():
     logger.debug(f'payload: {payload}')
 
     # parameterized queries, good for security and performance
-    statement1 = """      
-                  select assunto, conteudo, data from notificacao where id_notif in 
-                    (select notificacao_id_notif from utilizador_notificacao 
-                        where utilizador_userid = %s and lida = false);
-                """
+    if all:
+        statement1 = """      
+                    select assunto, conteudo, data from notificacao where id_notif in 
+                        (select notificacao_id_notif from utilizador_notificacao 
+                            where utilizador_userid = %s)
+                            order by id_notif desc;
+                    """
+    else:
+        statement1 = """      
+                    select assunto, conteudo, data from notificacao where id_notif in 
+                        (select notificacao_id_notif from utilizador_notificacao 
+                            where utilizador_userid = %s and lida = false)
+                            order by id_notif desc;
+                    """
 
     statement2 = """      
                 update utilizador_notificacao set lida = true where 
@@ -190,15 +207,19 @@ def open_notif_box():
                 print(row)
                 result.append({'assunto': row[0], 'data': row[2], 'conteudo': row[1]})
             cur.execute(statement2, values)
-            cur.execute("commit")
+            cur.execute('commit')
     except (Exception, psycopg2.DatabaseError) as error:
         logger.error(error)
+        cur.execute('rollback')
         result = 'Failed!'
     finally:
         if conn is not None:
             conn.close()
 
     return jsonify(result)
+
+
+
 
 @app.route("/dbproj/user/", methods=['PUT'])
 def authenticate_user():
@@ -227,9 +248,10 @@ def authenticate_user():
         res=cur.fetchone()
         logger.info(f'{res}')
         result={"authToken": res[0]}
-        cur.execute("commit")
+        cur.execute('commit')
     except (Exception, psycopg2.DatabaseError) as error:
         logger.error(error)
+        cur.execute('rollback')
         result = 'Failed!'
     finally:
         if conn is not None:
@@ -379,12 +401,18 @@ def add_auction():
         l_id=cur.fetchone()
         if l_id[0]==-1:
             result= 'Name does not correspond to its id'
-        else:
-            cur.execute("commit")
-            
+            cur.execute('rollback')
+            return result
+        elif l_id[0] ==-2:
+            result= 'expire date is in the past...'
+            cur.execute('rollback')
+            return result
+        else:    
             result= {"leilaoId": int (l_id[0])}
+        cur.execute('commit')
     except (Exception, psycopg2.DatabaseError) as error:
         logger.error(error)
+        cur.execute('rollback')
         result = 'Failed!'
     finally:
         if conn is not None:
@@ -446,13 +474,14 @@ def update_auction(leilaoId):
             cur.execute("update leilao set titulo = %s, descricao= %s where leilaoid = %s", (titulo, descricao, row_to_update[0]))
             
             logger.info("after update")
-            cur.execute("commit")
+            cur.execute('commit')
             #cur.execute("select leilaoid, titulo, descricao, artigo_artigoid, expira_leilao from leilao where leilaoid= %s",(l_row[0],))
             #res=cur.fetchone()
             result={'leilaoId': int(row_to_update[0]),'titulo' : titulo, 'descricao': descricao, 'artigoid': row_to_update[3], 'expire_date': row_to_update[4] }
 
     except (Exception, psycopg2.DatabaseError) as error:
         logger.error(error)
+        cur.execute('rollback')
         result = 'Failed!'
     finally:
         if conn is not None:
@@ -525,7 +554,7 @@ def details_auction(leilaoId):
             cur.execute(statement2, values)
             row=cur.fetchone()
             content = [{'artigoId':row[0], 'nome':row[1]}]
-            # content = [row]       
+            # content = [row]
             payload.append(content)
 
             payload.append("Mensagens:")
@@ -544,7 +573,6 @@ def details_auction(leilaoId):
             for row in rows:
                 content.append({'licitaid': row[0],'valor': row[1], 'licita_hora': row[2], 'username':row[3]})
             payload.append(content)
-            cur.execute("commit")
 
         
     except (Exception, psycopg2.DatabaseError) as error:
@@ -577,7 +605,10 @@ def bid_leilao(leilaoId, licitacao):
 
     value_licita = float(licitacao)
     # parameterized queries, good for security and performance
-    statement = """SELECT licitacao(%s, %s, %s)"""
+    statement = """
+    begin transaction isolation level serializable;
+    SELECT licitacao(%s, %s, %s)
+    """
 
     values = (user_id, leilaoId, licitacao)
 
@@ -588,16 +619,20 @@ def bid_leilao(leilaoId, licitacao):
         logger.info(f'{res}')
         if res== -1:
             result = 'You need to bid higher than the last bid'
+            cur.execute('rollback')
         elif res==-2:
             result = 'This auction has already ended!'
+            cur.execute('rollback')
         elif res== -3:
             result = 'You cannot bid in your own auction!'
+            cur.execute('rollback')
         else:
-            cur.execute("commit")
+            cur.execute('commit')
             result = 'Your bid has been registered!'
     except (Exception, psycopg2.DatabaseError) as error:
         logger.error(error)
         result = 'Error while processing your bid!'
+        cur.execute('rollback')
     finally:
         if conn is not None:
             conn.close()
@@ -633,7 +668,7 @@ def related_auctions():
         or exists (select licita_utilizador_utilizadorid 
                     from notificacao_licita_licita n
                      where n.utilizador_userid = %s and n.licita_licitaid =ll.leilaoid )
-    """
+        """
 
     values = (user_id, user_id)
 
@@ -689,7 +724,7 @@ def get_item(artigoId):
     if rows is None:
         return 'No matches for your search!'
     row = rows[0]
-    logger.debug("---- selected itemn  ----")
+    logger.debug("---- selected item  ----")
     logger.debug(row)
     content = {'artigoId': int(row[0]), 'nome': row[1] }
     conn.close ()
@@ -735,10 +770,11 @@ def insert_item():
 
     try:
         cur.execute(statement, values)
-        cur.execute("commit")
+        cur.execute('commit')
         result = 'Inserted!'
     except (Exception, psycopg2.DatabaseError) as error:
         logger.error(error)
+        cur.execute('rollback')
         result = 'Failed!'
     finally:
         if conn is not None:

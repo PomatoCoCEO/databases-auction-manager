@@ -6546,3 +6546,1003 @@ INFO:logger:###              NOTIFICATION CHECK            ###
 INFO:logger:---- checking notifs  ----
 DEBUG:logger:payload: {'authToken': '730412'}
 INFO:werkzeug:172.19.0.1 - - [30/May/2021 16:30:57] "GET /dbproj/notif/ HTTP/1.1" 200 -
+INFO:logger:
+---------------------------------------------------------------
+API v1.0 online: http://localhost:8080/departments/
+
+
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://172.19.0.3:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------------------------------------------------
+API v1.0 online: http://localhost:8080/departments/
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 104-824-045
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user0', 'password': 'pass', 'email': 'user0@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user0) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user1', 'password': 'pass', 'email': 'user1@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user1) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user2', 'password': 'pass', 'email': 'user2@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user2) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user3', 'password': 'pass', 'email': 'user3@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user3) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user4', 'password': 'pass', 'email': 'user4@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user4) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user5', 'password': 'pass', 'email': 'user5@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user5) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user6', 'password': 'pass', 'email': 'user6@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user6) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user7', 'password': 'pass', 'email': 'user7@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user7) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user8', 'password': 'pass', 'email': 'user8@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user8) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user9', 'password': 'pass', 'email': 'user9@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user9) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user10', 'password': 'pass', 'email': 'user10@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user10) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user11', 'password': 'pass', 'email': 'user11@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user11) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user12', 'password': 'pass', 'email': 'user12@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user12) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user13', 'password': 'pass', 'email': 'user13@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user13) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user14', 'password': 'pass', 'email': 'user14@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user14) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user15', 'password': 'pass', 'email': 'user15@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user15) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user16', 'password': 'pass', 'email': 'user16@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user16) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user17', 'password': 'pass', 'email': 'user17@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user17) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user18', 'password': 'pass', 'email': 'user18@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user18) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user19', 'password': 'pass', 'email': 'user19@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user19) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user20', 'password': 'pass', 'email': 'user20@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user20) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user21', 'password': 'pass', 'email': 'user21@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user21) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user22', 'password': 'pass', 'email': 'user22@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user22) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user23', 'password': 'pass', 'email': 'user23@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user23) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user24', 'password': 'pass', 'email': 'user24@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user24) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user25', 'password': 'pass', 'email': 'user25@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user25) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:02] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user26', 'password': 'pass', 'email': 'user26@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user26) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:03] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user27', 'password': 'pass', 'email': 'user27@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user27) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:03] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user28', 'password': 'pass', 'email': 'user28@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user28) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:03] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user29', 'password': 'pass', 'email': 'user29@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:duplicate key value violates unique constraint "utilizador_username_key"
+DETAIL:  Key (username)=(user29) already exists.
+CONTEXT:  SQL statement "insert into utilizador (userId, username, password, email) 
+    values(uId, uname, pswd, eml)"
+PL/pgSQL function register_user(character varying,character varying,character varying) line 6 at SQL statement
+
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:03] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              AUTHENTICATION OF USERS              ###
+INFO:logger:---- update user  ----
+INFO:logger:content: {'userId': 'user3', 'password': 'pass'}
+INFO:logger:SELECT authenticate(user3, d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1)
+INFO:logger:('566238',)
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 20:44:21] "PUT /dbproj/user/ HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/demo-api.py', reloading
+INFO:logger:###              AUTHENTICATION OF USERS              ###
+INFO:logger:---- update user  ----
+INFO:logger:content: {'userId': 'user3', 'password': 'pass'}
+INFO:logger:SELECT authenticate(user3, d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1)
+INFO:logger:('660108',)
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:03:27] "PUT /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              DEMO: POST /leilao         ###
+INFO:logger:---- new leilao  ----
+DEBUG:logger:payload: {'authToken': '660108', 'artigoId': '4543', 'precoMinimo': '20', 'titulo': 'massa quase italiana', 'descricao': 'Polémica mas boa', 'expira_leilao': '2021-05-30 21:15:00', 'nome': 'Varanda do Ronaldo'}
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:06:20] "POST /dbproj/leilao/ HTTP/1.1" 200 -
+INFO:logger:###              DEMO: POST /leilao         ###
+INFO:logger:---- new leilao  ----
+DEBUG:logger:payload: {'authToken': '660108', 'artigoId': '4544', 'precoMinimo': '20', 'titulo': 'massa quase italiana', 'descricao': 'Polémica mas boa', 'expira_leilao': '2021-05-30 21:15:00', 'nome': 'Varanda do Ronaldo'}
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:06:28] "POST /dbproj/leilao/ HTTP/1.1" 200 -
+INFO:logger:###              AUTHENTICATION OF USERS              ###
+INFO:logger:---- update user  ----
+INFO:logger:content: {'userId': 'user4', 'password': 'pass'}
+INFO:logger:SELECT authenticate(user4, d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1)
+INFO:logger:('551184',)
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:06:36] "PUT /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              DEMO: PUT /leilao/id         ###
+DEBUG:logger:leilaoId: 2; licitacao: 200
+INFO:logger:0
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:06:55] "PUT /dbproj/leilao/2/200 HTTP/1.1" 200 -
+INFO:logger:###              AUTHENTICATION OF USERS              ###
+INFO:logger:---- update user  ----
+INFO:logger:content: {'userId': 'user5', 'password': 'pass'}
+INFO:logger:SELECT authenticate(user5, d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1)
+INFO:logger:('1031932',)
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:07:19] "PUT /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              DEMO: PUT /leilao/id         ###
+DEBUG:logger:leilaoId: 2; licitacao: 2000
+INFO:logger:0
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:07:38] "PUT /dbproj/leilao/2/2000 HTTP/1.1" 200 -
+INFO:logger:###              NOTIFICATION CHECK            ###
+INFO:logger:---- checking notifs  ----
+DEBUG:logger:payload: {'authToken': '660108'}
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:10:14] "GET /dbproj/notif/ HTTP/1.1" 200 -
+INFO:logger:###              NOTIFICATION CHECK            ###
+INFO:logger:---- checking notifs  ----
+DEBUG:logger:payload: {'authToken': '660108'}
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:10:29] "GET /dbproj/notif/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'authToken': '1031932', 'message': 'Gostava de vander a um preço mais alto'}
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:13:07] "POST /dbproj/message/2 HTTP/1.1" 200 -
+INFO:logger:###              NOTIFICATION CHECK            ###
+INFO:logger:---- checking notifs  ----
+DEBUG:logger:payload: {'authToken': '551184'}
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:13:28] "GET /dbproj/notif/ HTTP/1.1" 200 -
+INFO:logger:###              NOTIFICATION CHECK            ###
+INFO:logger:---- checking notifs  ----
+DEBUG:logger:payload: {'authToken': '660108'}
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:13:51] "GET /dbproj/notif/ HTTP/1.1" 200 -
+INFO:logger:###              NOTIFICATION CHECK            ###
+INFO:logger:---- checking notifs  ----
+DEBUG:logger:payload: {'authToken': '1031932'}
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:14:02] "GET /dbproj/notif/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'authToken': '551184', 'message': 'Vai ter de se contentar com o preço'}
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:16:07] "POST /dbproj/message/2 HTTP/1.1" 200 -
+INFO:logger:###              NOTIFICATION CHECK            ###
+INFO:logger:---- checking notifs  ----
+DEBUG:logger:payload: {'authToken': '1031932'}
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:16:32] "GET /dbproj/notif/ HTTP/1.1" 200 -
+INFO:logger:###              NOTIFICATION CHECK            ###
+INFO:logger:---- checking notifs  ----
+DEBUG:logger:payload: {'authToken': '1031932'}
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:16:48] "GET /dbproj/notif/ HTTP/1.1" 200 -
+INFO:logger:###              NOTIFICATION CHECK            ###
+INFO:logger:---- checking notifs  ----
+DEBUG:logger:payload: {'authToken': '1031932'}
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:25:17] "GET /dbproj/notif/ HTTP/1.1" 200 -
+INFO:logger:
+---------------------------------------------------------------
+API v1.0 online: http://localhost:8080/departments/
+
+
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://172.19.0.3:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------------------------------------------------
+API v1.0 online: http://localhost:8080/departments/
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-769-409
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user0', 'password': 'pass', 'email': 'user0@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:31:57] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user1', 'password': 'pass', 'email': 'user1@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:31:57] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user2', 'password': 'pass', 'email': 'user2@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:31:57] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user3', 'password': 'pass', 'email': 'user3@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:31:57] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user4', 'password': 'pass', 'email': 'user4@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:31:57] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user5', 'password': 'pass', 'email': 'user5@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:31:57] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user6', 'password': 'pass', 'email': 'user6@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:31:57] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user7', 'password': 'pass', 'email': 'user7@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:31:58] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user8', 'password': 'pass', 'email': 'user8@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:31:58] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user9', 'password': 'pass', 'email': 'user9@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:31:58] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user10', 'password': 'pass', 'email': 'user10@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:31:58] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user11', 'password': 'pass', 'email': 'user11@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:31:58] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user12', 'password': 'pass', 'email': 'user12@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:31:58] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user13', 'password': 'pass', 'email': 'user13@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:31:59] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user14', 'password': 'pass', 'email': 'user14@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:31:59] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user15', 'password': 'pass', 'email': 'user15@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:31:59] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user16', 'password': 'pass', 'email': 'user16@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:31:59] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user17', 'password': 'pass', 'email': 'user17@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:31:59] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user18', 'password': 'pass', 'email': 'user18@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:31:59] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user19', 'password': 'pass', 'email': 'user19@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:31:59] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user20', 'password': 'pass', 'email': 'user20@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:32:00] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user21', 'password': 'pass', 'email': 'user21@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:32:00] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user22', 'password': 'pass', 'email': 'user22@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:32:00] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user23', 'password': 'pass', 'email': 'user23@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:32:00] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user24', 'password': 'pass', 'email': 'user24@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:32:00] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user25', 'password': 'pass', 'email': 'user25@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:32:00] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user26', 'password': 'pass', 'email': 'user26@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:32:01] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user27', 'password': 'pass', 'email': 'user27@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:32:01] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user28', 'password': 'pass', 'email': 'user28@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:32:01] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user29', 'password': 'pass', 'email': 'user29@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+ERROR:logger:'psycopg2.extensions.cursor' object has no attribute 'commit'
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:32:01] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/app/demo-api.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------------------------------------------------
+API v1.0 online: http://localhost:8080/departments/
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-769-409
+INFO:logger:
+---------------------------------------------------------------
+API v1.0 online: http://localhost:8080/departments/
+
+
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://172.19.0.3:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------------------------------------------------
+API v1.0 online: http://localhost:8080/departments/
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-671-741
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user0', 'password': 'pass', 'email': 'user0@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:13] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user1', 'password': 'pass', 'email': 'user1@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:13] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user2', 'password': 'pass', 'email': 'user2@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:13] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user3', 'password': 'pass', 'email': 'user3@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user4', 'password': 'pass', 'email': 'user4@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user5', 'password': 'pass', 'email': 'user5@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user6', 'password': 'pass', 'email': 'user6@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user7', 'password': 'pass', 'email': 'user7@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user8', 'password': 'pass', 'email': 'user8@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user9', 'password': 'pass', 'email': 'user9@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user10', 'password': 'pass', 'email': 'user10@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user11', 'password': 'pass', 'email': 'user11@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user12', 'password': 'pass', 'email': 'user12@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user13', 'password': 'pass', 'email': 'user13@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user14', 'password': 'pass', 'email': 'user14@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user15', 'password': 'pass', 'email': 'user15@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user16', 'password': 'pass', 'email': 'user16@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user17', 'password': 'pass', 'email': 'user17@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user18', 'password': 'pass', 'email': 'user18@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user19', 'password': 'pass', 'email': 'user19@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user20', 'password': 'pass', 'email': 'user20@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user21', 'password': 'pass', 'email': 'user21@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user22', 'password': 'pass', 'email': 'user22@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user23', 'password': 'pass', 'email': 'user23@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user24', 'password': 'pass', 'email': 'user24@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user25', 'password': 'pass', 'email': 'user25@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user26', 'password': 'pass', 'email': 'user26@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user27', 'password': 'pass', 'email': 'user27@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user28', 'password': 'pass', 'email': 'user28@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user29', 'password': 'pass', 'email': 'user29@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:33:14] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:
+---------------------------------------------------------------
+API v1.0 online: http://localhost:8080/departments/
+
+
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://172.19.0.3:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------------------------------------------------
+API v1.0 online: http://localhost:8080/departments/
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 408-493-262
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user0', 'password': 'pass', 'email': 'user0@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:29] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user1', 'password': 'pass', 'email': 'user1@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:29] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user2', 'password': 'pass', 'email': 'user2@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:29] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user3', 'password': 'pass', 'email': 'user3@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:29] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user4', 'password': 'pass', 'email': 'user4@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:29] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user5', 'password': 'pass', 'email': 'user5@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:29] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user6', 'password': 'pass', 'email': 'user6@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:29] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user7', 'password': 'pass', 'email': 'user7@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:29] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user8', 'password': 'pass', 'email': 'user8@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:29] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user9', 'password': 'pass', 'email': 'user9@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:29] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user10', 'password': 'pass', 'email': 'user10@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:29] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user11', 'password': 'pass', 'email': 'user11@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:29] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user12', 'password': 'pass', 'email': 'user12@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:29] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user13', 'password': 'pass', 'email': 'user13@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:29] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user14', 'password': 'pass', 'email': 'user14@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:29] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user15', 'password': 'pass', 'email': 'user15@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:29] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user16', 'password': 'pass', 'email': 'user16@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:29] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user17', 'password': 'pass', 'email': 'user17@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:29] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user18', 'password': 'pass', 'email': 'user18@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:29] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user19', 'password': 'pass', 'email': 'user19@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:29] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user20', 'password': 'pass', 'email': 'user20@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:29] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user21', 'password': 'pass', 'email': 'user21@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:30] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user22', 'password': 'pass', 'email': 'user22@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:30] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user23', 'password': 'pass', 'email': 'user23@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:30] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user24', 'password': 'pass', 'email': 'user24@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:30] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user25', 'password': 'pass', 'email': 'user25@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:30] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user26', 'password': 'pass', 'email': 'user26@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:30] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user27', 'password': 'pass', 'email': 'user27@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:30] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user28', 'password': 'pass', 'email': 'user28@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:30] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              INSERTION OF USERS            ###
+INFO:logger:---- new user  ----
+DEBUG:logger:payload: {'username': 'user29', 'password': 'pass', 'email': 'user29@gmail.com'}
+INFO:logger:d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:30] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              AUTHENTICATION OF USERS              ###
+INFO:logger:---- update user  ----
+INFO:logger:content: {'userId': 'user0', 'password': 'pass'}
+INFO:logger:SELECT authenticate(user0, d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1)
+INFO:logger:('100496',)
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:41:49] "PUT /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              DEMO: POST /leilao         ###
+INFO:logger:---- new leilao  ----
+DEBUG:logger:payload: {'authToken': '100496', 'artigoId': '4544', 'precoMinimo': '20', 'titulo': 'Requinte, senhora', 'descricao': 'Ainda está bom', 'expira_leilao': '2021-05-30 21:15:00', 'nome': 'Um Ferrero Rocher, dos anúncios de 98'}
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:42:51] "POST /dbproj/leilao/ HTTP/1.1" 200 -
+INFO:logger:###              DEMO: POST /leilao         ###
+INFO:logger:---- new leilao  ----
+DEBUG:logger:payload: {'authToken': '100496', 'artigoId': '4545', 'precoMinimo': '20', 'titulo': 'Requinte, senhora', 'descricao': 'Ainda está bom', 'expira_leilao': '2021-05-30 21:15:00', 'nome': 'Um Ferrero Rocher, dos anúncios de 98'}
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:42:58] "POST /dbproj/leilao/ HTTP/1.1" 200 -
+INFO:logger:###              DEMO: POST /leilao         ###
+INFO:logger:---- new leilao  ----
+DEBUG:logger:payload: {'authToken': '100496', 'artigoId': '4546', 'precoMinimo': '20', 'titulo': 'Requinte, senhora', 'descricao': 'Ainda está bom', 'expira_leilao': '2021-05-30 21:15:00', 'nome': 'Um Ferrero Rocher, dos anúncios de 98'}
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:43:04] "POST /dbproj/leilao/ HTTP/1.1" 200 -
+INFO:logger:###              DEMO: POST /leilao         ###
+INFO:logger:---- new leilao  ----
+DEBUG:logger:payload: {'authToken': '100496', 'artigoId': '8900', 'precoMinimo': '20', 'titulo': 'Requinte, senhora', 'descricao': 'Ainda está bom', 'expira_leilao': '2021-05-30 21:15:00', 'nome': 'Um Ferrero Rocher, dos anúncios de 98'}
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:43:17] "POST /dbproj/leilao/ HTTP/1.1" 200 -
+INFO:logger:###              DEMO: POST /leilao         ###
+INFO:logger:---- new leilao  ----
+DEBUG:logger:payload: {'authToken': '100496', 'artigoId': '8900', 'precoMinimo': '20', 'titulo': 'Requinte, senhora', 'descricao': 'Ainda está bom', 'expira_leilao': '2021-05-30 22:50:00', 'nome': 'Um Ferrero Rocher, dos anúncios de 98'}
+INFO:werkzeug:172.19.0.1 - - [30/May/2021 21:46:33] "POST /dbproj/leilao/ HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/demo-api.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------------------------------------------------
+API v1.0 online: http://localhost:8080/departments/
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 408-493-262
+INFO:werkzeug: * Detected change in '/app/demo-api.py', reloading

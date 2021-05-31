@@ -38,6 +38,7 @@ CREATE TABLE leilao (
 	versao_atual	 BIGINT NOT NULL,
 	utilizador_userid BIGINT NOT NULL,
 	artigo_artigoid	 BIGINT NOT NULL,
+	acabou boolean not null default false,
 	PRIMARY KEY(leilaoid)
 );
 
